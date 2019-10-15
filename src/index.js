@@ -219,7 +219,7 @@ class CurrencyInput extends Component {
 
         this.setState({ maskedValue, value }, () => {
             this.props.onChange(maskedValue, value, event);
-            this.props.onChangeEvent(event, maskedValue, value);
+            this.props.onChangeEvent(event, value, maskedValue);
         });
     }
 
